@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="comprar.css">
+    <title>compra de auto</title>
+</head>
+<body>
+    <img id="carro" src="img/tesla_png-removebg-preview.png" alt=" tesla">
+    <h2>Compra de auto</h2>
+    <div id="block_form">
+        <h3>Información Bancaria</h3>
+        <form>
+            <fieldset>
+                <legend>Lista de bancos</legend>
+                <select name="bancos" id="bancos"> 
+                    <option value="Selecione">Selecione banco...</option>
+                    <option value="Bancolombia">Bancolombia</option>
+                    <option value="BancodeBogota">Banco de Bogotá</option>
+                    <option value="Davivienda">Davivienda</option>
+                    <option value="BBVA">BBVA</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de persona</legend>
+                <select name="tipoPersona" id="tipoPersona">
+                    <option value="Natural"> Natural</option>
+                    <option value="Juridica"> Jurídica</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend> Nombres y apellidos</legend>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+            </fieldset>
+            <div id="documento">
+                <fieldset>
+                    <legend>Documento</legend>
+                    <select name="tipoDocumento" id="tipoDocumento">
+                        <option value="cc">Cédula  de ciudadanía</option>
+                        <option value="ce">Cédula de extranjería</option>
+                        <option value="ti">Tarjeta de identidad</option>
+
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Correo Electrónico</legend>
+                    <input type="mail" name="correo" placeholder="Ingresa tu correo">
+                </fieldset>
+            </div>
+            <div id="botones">
+                <button id="cancelar">Cancelar</button>
+                <button id="continuar">Continuar</button>
+            </div>
+            </form>
+    </div>
+</body>
+</html>
+

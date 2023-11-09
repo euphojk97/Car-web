@@ -1,0 +1,266 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    /*z-index Le da prioridad a un elemento para colocarlo en frente, atras o en el medio */
+    z-index: 1;
+}
+
+header:hover{
+    background-color: rgb(166, 208, 252);
+    transition: all 1s;
+}
+header a{
+    color: rgb(255, 255, 255);
+}
+header:hover a{
+    color: rgb(250, 250, 250);
+}
+header:hover h2{
+    color:rgb(255, 254, 254);
+}
+header:hover i{
+    color: rgb(255, 255, 255);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3pc;
+    padding-right: 3pc;
+    position: fixed;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    z-index: 1;/*Le da una prioridad a un elemento*/
+    background-color: white;
+}
+.hero {
+    text-align: center;
+    padding: 0; 
+    color: #020202;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.hero, .services {
+    text-align: left;
+  }
+  
+  .hero_1 {
+    text-align: center;
+    padding: 0; 
+    color: #020202;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.hero_1, .services {
+    text-align: left;
+  }
+  
+
+.hero_2 {
+    text-align: center;
+    padding: 0; 
+    color: #020202;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.hero_2, .services {
+    text-align: left;
+  }
+
+  
+.hero_3 {
+    text-align: center;
+    padding: 0; 
+    color: #020202;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.hero_3, .services {
+    text-align: left;
+  }
+  
+.img-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 299PX;
+    left: 299PX;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.content h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.content_ h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+.content_ {
+    position: absolute;
+    top: 200PX;
+    left: 110PX;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.content_ h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+.content_1 {
+    position: absolute;
+    top: 480PX;
+    left: 400PX;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.content_1 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+
+.content_0{
+    position: absolute;
+    top: 480PX;
+    left: 200PX;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.content_0 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+.content_2{
+    position: absolute;
+    top: 100px;
+    left: 300PX;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.content_2 h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.cta-button {
+    background: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none ;
+}
+
+.products, .services {
+    padding: 50p;
+}
+.products{
+    background-color: rgb(38, 38, 38);
+}
+
+.product-card, .service-card {
+    background: #030303;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#iconos_pie i{
+    font-size: 17px;
+    color: white;
+}
+#iconos_pie{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+#iconos_pie:is(:hover, :focus) {
+    transform: scale(1.1);
+    transition: all ease 0.2s;
+}
+#conos_pie:is(:hover, :focus) .img{
+    width: 170px;
+
+}
+
+
